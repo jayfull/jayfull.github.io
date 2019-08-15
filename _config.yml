@@ -1,9 +1,18 @@
-github: [metadata]
- encoding: UTF-8
- kramdown:
-   input: GFM
-   hard_wrap: false
- future: true
- jailed: false
- theme: jekyll-theme-primer
- gfm_quirks: paragraph_end
+title: Jay Fuller - Portfolio
+url: "http://yourdomain.com"
+markdown: kramdown
+permalink: /:title
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
