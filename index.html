@@ -1,6 +1,111 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Jay Fuller</h1>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani:500,600,700" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Jay Fuller</title>
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- <link rel="stylesheet" href='static/css/styles.css') }}"> -->
+        <link rel="stylesheet" href="static/css/helpers.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+          :root {
+            --primary-color: #292421;
+            --secondary-color: #596483;
+          }
+          /*.button {
+              background-color: var(--secondary-color);
+          }*/
+        </style>
+
+<!--         <link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('static', filename='img/favicon/apple-icon-57x57.png')}}">
+        <link rel="apple-touch-icon" sizes="60x60" href="{{ url_for('static', filename='img/favicon/apple-icon-60x60.png')}}">
+        <link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='img/favicon/apple-icon-72x72.png')}}">
+        <link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static', filename='img/favicon/apple-icon-76x76.png')}}">
+        <link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='img/favicon/apple-icon-114x114.png')}}">
+        <link rel="apple-touch-icon" sizes="120x120" href="{{ url_for('static', filename='img/favicon/apple-icon-120x120.png')}}">
+        <link rel="apple-touch-icon" sizes="144x144" href="{{ url_for('static', filename='img/favicon/apple-icon-144x144.png')}}">
+        <link rel="apple-touch-icon" sizes="152x152" href="{{ url_for('static', filename='img/favicon/apple-icon-152x152.png')}}">
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='img/favicon/apple-icon-180x180.png')}}">
+        <link rel="icon" type="image/png" sizes="192x192"  href="{{ url_for('static', filename='img/favicon/android-icon-192x192.png')}}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='img/favicon/favicon-32x32.png')}}">
+        <link rel="icon" type="image/png" sizes="96x96" href="{{ url_for('static', filename='img/favicon/favicon-96x96.png')}}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='img/favicon/favicon-16x16.png')}}">
+        <link rel="manifest" href="{{ url_for('static', filename='img/favicon/manifest.json')}}"> -->
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="{{ url_for('static', filename='img/favicon/ms-icon-144x144.png')}}">
+        <meta name="theme-color" content="#ffffff">
+
+        <style>
+        .hero {
+            background: url(static/img/revolution_home.jpg) center / cover;
+        }
+        </style>
+    </head>
+    <body>
+
+<!-- .hero -->
+<section class="hero is-fullheight">
+
+
+<!-- .hero-head -->
+<nav class="hero-head">
+    <div class="columns is-mobile is-marginless heading has-text-weight-bold">
+        <div class="column left">
+            <!-- <figure class="navbar-item image">
+                <img src="static/img/Fusion_Primary_navy_gold.svg" style="width: 6.25rem; height: 1rem;">
+            </figure> -->
+            <p class="navbar-item has-text-light">Jay </p>
+        </div>
+        <div class="column center ">
+            <p class="navbar-item has-text-light">Jay </p>
+        </div>
+        <div class="column right">
+                <a class="navbar-item has-text-light" href="{{ url_for('al_account') }}"><span>
+                            <i class="fa fa-cog"></i>  ACCOUNT   </span> </a>
+                <a class="navbar-item has-text-light " href="{{ url_for('al_logout') }}"><span>
+                            <i class="fa fa-sign-out"></i>  LOG OUT </span> </a>
+            <!-- <figure class="navbar-item image has-text-light center desktop">
+                <i class="fas fa-bars is-light" style="width: 1rem; height: 1rem;"></i>
+            </figure> -->
+        </div>
+    </div>
+</nav>
+
+
+<!-- .hero-body -->
+
+<footer class="hero-body">
+    <div class="container has-text-centered">
+        <div class="column is-6 is-offset-3">
+            <div>
+                <img src="static/img/aimlab_On_Dark_home-03.png"">
+            </div>
+            <div class="buttons is-centered">
+                <a class="button has-text-dark has-text-weight-semibold" href="{{ url_for('al_dailysurvey') }}">
+                    Daily Survey
+                </a>
+<!--                 <a class="button is-light has-text-primary has-text-weight-semibold " href="{{ url_for('tb_weeklysurvey') }}">
+                    Weekly Survey
+                </a> -->
+                <a class="button is-light has-text-dark has-text-weight-semibold " href="{{ url_for('al_redirect') }}">
+                    Dashboard
+                </a>
+            </div>
+            <p class="has-text-light has-text-weight-bold ">
+                <a class="has-text-light" href="{{ url_for('al_signup') }}">
+                New? Click here to sign up.</a>
+            </p>
+            <br></br>
+        </div>
+    </div>
+</footer>
+
+</section>
+<!-- /.hero -->
+
+    </body>
 </html>
