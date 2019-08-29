@@ -1,4 +1,4 @@
 *.txt
 notes.md
 /_site
-.DS_Store
+*.DS_Store
