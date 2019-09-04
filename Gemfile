@@ -1,11 +1,7 @@
 source 'https://rubygems.org'
 
-group :jekyll_plugins do
-  gem "jekyll-paginate"
-  gem "jekyll-feed"
-  gem "html-proofer"
-  gem "rake"
-  gem "jekyll-gist"
-  gem "github-pages"
+gem "github-pages", '197', group: :jekyll_plugins
 
-end
+# enable tzinfo-data for local build
+# gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
+gem 'jekyll-paginate'
